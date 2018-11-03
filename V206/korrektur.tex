@@ -1,0 +1,47 @@
+\input{header.tex}
+\begin{document}
+
+\section{mechanische Leistung des Kompressors}
+Die mechanische Leistung wird mit Formel (13) bestimmt.
+Aus der idealen Gasgleichung
+\begin{equation*}
+  p\cdot V = R\cdot m\cdot T
+\end{equation*}
+und
+\begin{equation*}
+  V =\frac{m}{\rho}
+\end{equation*}
+folgt für die Dichte:
+\begin{equation*}
+  \rho = \frac{\rho _0T_0p_a}{p_0T_2}\, .
+\end{equation*}
+Vorher gegeben sind:
+\begin{align*}
+  \rho _0 &= 5,51\cdot 10^{-3} \,\mathrm{\frac{kg}{L}}\\
+  T &= 273,15 \, \mathrm{K} \\
+  p &= 1\, \mathrm{Bar} = 10^4 \, \mathrm{Pa}\\
+  \kappa &= 1,14
+\end{align*}
+
+
+Der Fehler berechnet sich mit der Formel
+\begin{equation*}
+  \Delta  N = \frac{1}{\kappa - 1} \left( p_b \sqrt[\kappa]{\frac{p_a}{p_b}} - p_a \right)
+  \frac{1}{\rho}\cdot \Delta \left(\frac{dm}{dt}\right)\, .
+\end{equation*}
+Die Ergebnisse sind in Tabelle (\ref{tab:mech}) zu finden.
+\begin{table}
+  \centering
+  \caption{Mechanische Leistung}
+  \label{tab:mech}
+  \begin{tabular}{c c c c}
+    \toprule $Zeit[s]$ & $\rho [kg/m^{3}]$ & $\sqrt{p_a/p_b}$ & $N_{mech}[W]$  \\
+    \midrule
+    120 & 15,43 & 0,42300 & (-4,0 \pm 0,4) \\
+    300 & 16,23 & 0,37443 & (-4,0 \pm 0,5) \\
+    600 & 16,71 & 0,35028 & (-3,3 \pm 0,6) \\
+    1080& 17,17 & 0,27510 & (-2,4 \pm 1,1)  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\end{document}

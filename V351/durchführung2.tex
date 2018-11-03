@@ -1,0 +1,66 @@
+
+
+\section{Durchführung}
+\subsection{Vorbereitung}
+Zur Vorbereitung auf den Versuch werden die Fourier-Koeffizienten einer
+Rechteck-, Dreieck- und Sägezahnspannung bestimmt. Zur Vereinfachung wurden die
+Funktionen als gerade beziehunsweise ungerade angenommen.
+\subsubsection{Rechteckspannung}
+Für die Bestimmung der Rechteckspannung wird eine ungerade Funktion definiert, aus der sich
+die Koeffizenten:
+\begin{align*}
+ a_{0} = 0,\ \text{da}\ f(t)\ \text{ungerade}\\
+ a_{n} = 0,\ \text{da}\ f(t)\ \text{ungerade}\\
+ b_{n} =	\begin{cases}
+			\dfrac{1}{n\pi} ,\ \text{für}\ n\ \text{ungerade}\\ \\
+      0 ,\ \text{für}\ n\ \text{gerade}\\\\
+		\end{cases}
+\end{align*}
+berechnen lassen.
+
+\subsubsection{Dreieckspannung}
+Die Fourrierkoeffizienten einer geraden Funktion berechnen sich zu:
+\begin{align*}
+  a_{n} =  \begin{cases}
+ 					\dfrac{1}{(n\pi)^{2}} ,\ \text{für}\ n\ \text{ungerade}\\ \\
+ 					0 ,\ \text{für}\ n\ \text{gerade}\\\\
+ 				\end{cases}\\
+  b_{n} = 0,\ \text{da}\ f(t)\ \text{gerade}\\
+\end{align*}
+
+\subsubsection{Sägezahnspannung}
+Zur Berechnung einer Sägezahnspannung wird wie bei der Rechteckspannung eine
+ungerade Funktion verwendet. Daraus folgt für die Amplituden der Oberschwingung:
+\begin{align*}
+ a_{0} = 0,\ \text{da}\ f(t)\ \text{ungerade}\\
+ a_{n} = 0,\ \text{da}\ f(t)\ \text{ungerade}\\
+ b_{n} = (-1)^{n+1} \dfrac{1}{n\pi}.
+\end{align*}
+\subsection{Fourieranalyse}
+Der Versuchsaufbau der Fourieraalyse besteht aus einem Funktionsgenerator,
+der als Signalquelle dient und einem Digitalszilloskop, welches die Fourieranalyse
+durchführt.
+\newline
+Die Abtastrate am Oszilloskop muss größer als das Doppelte der maximalen
+Oberschwingungsfrequenz eingestellt werden, sodass gilt
+\begin{align}
+  v_a > 2v\ua{max}.
+\end{align}
+
+Vom Funktionsgenerator werden jeweils Rechteck-, Dreieck- und Sägezahnspannugen erzeugt.
+Anhand dessen können die Frequenzen und die Amplituden der Peaks mittels der
+Cursorfunktion abgelesen werden.
+
+\subsection{Fouriersynthese}
+Zur Fouriersynthese wird anschließend ein Oberwellengenerator verwendet.
+Zuerst werden die Phasenverhältnisse zwischen Grund- und Oberschwingung eingestellt.
+Dafür wird das Oszilloskop auf den X-Y-Betrieb umgestellt. Auf dem X-Eingang wird die
+Grundschwingung eingespeist und auf dem Y-Eingang eine ganzzahlige Oberwelle.
+
+Auf dem Oszilloskop sind sogenannte Lissajousfiguren erkennbar, welche bei Überlagerung
+zweier harmonischer, rechtwinklig zueinander stehenden Schwingungen entstehen.
+Die Phasendifferenz zwischen Grund- und Oberschwingung soll auf $\Updelta\varphi = 0$
+eingestellt werden.
+
+Durch das schrittweise Aufsummieren der einzelnen Oberwellen ist die Summenschwingung
+am Oszilloskop zu sehen.

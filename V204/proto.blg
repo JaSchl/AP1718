@@ -1,0 +1,17 @@
+[1] Config.pm:354> INFO - This is Biber 2.7
+[1] Config.pm:357> INFO - Logfile is 'proto.blg'
+[115] biber:303> INFO - === Do Jan 11, 2018, 17:29:56
+[176] Biber.pm:359> INFO - Reading 'proto.bcf'
+[479] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[534] Biber.pm:3670> INFO - Processing section 0
+[575] Biber.pm:3840> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[587] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[601] bibtex.pm:1292> INFO - Found BibTeX data source 'lit.bib'
+[604] Utils.pm:164> WARN - Duplicate entry key: 'on3' in file 'lit.bib', skipping ...
+[685] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[686] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[686] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[686] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
+[700] bbl.pm:608> INFO - Writing 'proto.bbl' with encoding 'UTF-8'
+[703] bbl.pm:712> INFO - Output to proto.bbl
+[704] Biber.pm:109> INFO - WARNINGS: 1

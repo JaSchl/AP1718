@@ -1,0 +1,197 @@
+
+  \section{Auswertung}
+\subsection{Statische Methode}
+\subsubsection{Temperaturverläufe}
+
+Die Temperaturverläufe von dem breiteren ($T_1$)  und dem dünneren ($T_4$) Messingstab sind in Abbildung (2) zu sehen.
+Der Verlauf der beiden Graphen ist sehr ähnlich.
+Die Temperatr des dickeren Stabes steigt leicht geringer als die Temeratur der dünneren Probe.
+Nach ca. $18,75\, s$ steigen die Graphen mit konstanter Steigung.
+An diesem Punkt haben beide Proben eine Temperatur von $24,07\, °C$.
+Nach ca.  $120,31\, s$ steigen die Temeraturkurven langsamer an und nähren sich einem Maximum.
+Zu diesem Zeitpunkt besitzt der dickere Stab eine Temperatur von ca. $42,96\, °C$
+und der dünnere eine Temperatur von ca. $43,33\, °C$.
+
+Die Temperaturverläufe von Aluminium ($T_5$) und Edelstahl ($T_8$) sind in Abbildung (3) zu sehen.
+Der Temperaturverlauf ähnelt dem Verlauf von dem zuvor betrachteten Messing.
+Der Graph beginnt allerdings schon nach $9,38\, s$ stark zu steigen.
+Zu diesem Zeitpunkt hat die Probe eine Temperatur von $24,12\, °C$.
+Nach $118,75 \, s$ besitzt die Probe eine Temperatur von $56,47\, °C$.
+Die Edelstahl-Probe besitzt zu diesem Zeitpunt eine Temperatur von $26,47\, °C$.
+Die Temperaturkurve dieser Probe wächst sehr langsam und sehr flach.
+Sie ist zu den anderen Dreien durch ihren Verlauf am unterschiedlichsten.
+Es fällt auf, dass nach Beendigung der Hitzezugabe die Temperaturkurve ca $130\, s$ weiter steigt.
+
+\begin{table}
+  \centering
+  \caption{Maxima}
+  \label{tab:hp}
+  \begin{tabular}{c c c }
+    \toprule $\symup{Material}$ & $T[°C]$ & $t[s]$ \\
+    \midrule
+    Messing          & 43,70 & 135,94 \\
+    $\symup{Messing_{schmal}}$ & 43,70 & 129,69 \\
+    Aluminium        & 56,47 & 118,75 \\
+    Edelstahl        & 30,59 & 229,69 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+In Tabelle (\ref{tab:hp}) sind die Maxima der erzeugten Graphen aufgetragen.
+Dabei wurde die höchst erreichte Temperatur der Probe während der Messung aufgetragen.
+Es stellt sich heraus, dass Aluminium die beste und Edelstahl die schlechteste Wärmeleitfähigkeit besitzt.
+
+\subsubsection{Wärmestrom}
+Der Wärmestrom wird für Messing und Edelstahl
+%Für Aluminium ist dies nicht möglich, da $\partial T$ nicht mehr bestimmt werden kann.
+ mit Formel (\ref{eqn:kappa})berechnet.\
+Für die Wärmeleitfähigkeit $\kappa$ werden folgende Werte eingesetzt:
+\begin{align*}
+  \kappa_{Messing} &= 120\, \mathrm{W/mK} \\
+  \kappa_{Edelstahl} &= 15\, \mathrm{W/mK}
+\end{align*} \cite{on2}
+
+Die Querschnittsfläche des Stabes beträgt $4,8 \cdot 10^{-5}\, m^2$ \cite[3]{on1}
+und der Abstand zwischen den beiden Thermoelementen beträgt $4\, cm$
+Die Werte für $\partial T$ werden aus den Abbildungen (4) und (5) entnommen
+und sind in Tabelle (\ref{tab:dq}) zu finden.\\
+Die Ergebnisse für den Wärmestrom sind ebenfalls in Tabelle (\ref{tab:dq}) zu finden.
+\begin{table}[H]
+  \centering
+  \caption{Wärmestrom}
+  \label{tab:dq}
+  \sisetup{table-format=2.1}
+\begin{tabular}{S[table-format=3.1] S S S S }
+    \toprule
+    & \multicolumn{2}{c}{Messing} & \multicolumn{2}{c}{Edelstahl} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+{$t[s]$} & {$(T_2-T_1)[K]$} & {$dQ/dt[W]$} & {$(T_8-T_7)[K]$} & {$dQ/dt[W]$} \\
+    \midrule
+    32,25 & 282,41  & -40,67  & 279,44 & -5,03 \\
+    50,00 & 284,08  & -40,90  & 284,58 & -5,12 \\
+    56,13 & 284,82  & -41,01  & 288,86 & -5,19\\
+    82,25 & 285,19  & -41,07  & 291,54 & -5,25 \\
+    100,00& 285,19  & -41,07  & 293,51 & -5,28 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\subsubsection{Temperaturdifferenz}
+
+Die Temperaturdifferenz zwischen den beiden Thermoelementen des Messingstabes sind in Abbildung (4) zu sehen.
+$\symup T_2$ ist die Temperatur die näher am Peltierelement liegt.
+Die Temperaturkurve steigt erst sehr stark und dann immer langsamer.
+Das Temperaturmaximum liegt bei ca. $11,85\, °C$.
+Dieser Wert wird nach ca. $109,68\, s$ errwicht.
+Ab diesem Punkt fällt die Kurve rapide ab.
+Die Temperaturdifferenz der beiden Thermoelemente von Edelstahl ist in Abbildung (5) zu sehen.
+Das Maximum liegt bei $120\, s$und hat einen Wert von $22,86\, °C$.
+Die Temeratur steigt sehr gleichmäßig bis zu dem Punkt, an dem der Abkühlvorgang beginnt.
+Im Vergleich zu den Temperaturverläufen aus Abbildung (2) und (3), ist hier auch zu sehen,
+dass Edelstahl die schlechteste Wärmeleitfähigkeit der vier getesteten besitzt.
+
+
+\subsection{Dynamische Methode}
+Die Amplituden und die Phasendifferenz $\Delta t$,
+die in den Tabellen (\ref{tab:mes}), (\ref{tab:al}) und (\ref{tab:ed}) zu finden sind,
+wurden mithilfe der Abbildungen (6), (7) und (8) bestimmt.
+Die Wärmeleitfähigkeit $\kappa$ wurde mit Formel (\ref{eqn:kappa2}) bestimmt.
+\begin{table}[H]
+  \centering
+  \caption{Messingstab}
+  \label{tab:mes}
+  \begin{tabular}{c c c c}
+    \toprule $A_{1_{fern}}[°C]$ & $A_{2_{nah}}[°C]$ & $\Delta t[s]$ & $\kappa[W/mK]$ \\
+    \midrule
+    1,5 & 4,5  & 14,286 & 167,411 \\
+    1,5 & 4,25 & 9,524  & 264,564 \\
+    1,5 & 4,5  & 14,286 & 167,411 \\
+    1,5 & 4,5  & 9,524  & 250,799 \\
+    1,5 & 4,5  & 9,524  & 250,799 \\
+    1,5 & 4,25 & 14,286 & 176,599 \\
+    1,5 & 4,25 & 9,524  & 264,564 \\
+    1,5 & 4,25 & 9,524  & 264,564 \\
+    1,5 & 4,5  & 9,524  & 250,799 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Daraus folgt nun der Mittelwert für die Wärmeleitfähigkeit:
+\begin{equation}
+\overline \kappa = (228,612\pm 31,616)\, \mathrm{\frac{W}{mK}}
+\end{equation}
+Der Literaturwert liegt bei $120\, W/mK$ \cite{on2}\\
+Somit ergibt sich eine Abweichung von $90,51\, \%$
+\begin{table}[H]
+  \centering
+  \caption{Aluminiumstab}
+  \label{tab:al}
+  \begin{tabular}{c c c c}
+    \toprule $A_{5_{fern}}[°C]$ & $A_{6_{nah}}[°C]$ & $\Delta t[s]$ & $\kappa$ \\
+    \midrule
+    3,261  & 6,739 & 9,524  & 268,933 \\
+    3,043  & 6,422 & 9,524  & 261,368 \\
+    3,043  & 6,304 & 9,524  & 268,023 \\
+    3,043  & 6,304 & 9,524  & 268,023 \\
+    3,043  & 6,304 & 9,524  & 268,023 \\
+    3,043  & 6,304 & 9,524  & 268,023 \\
+    2,826  & 6,087 & 9,524  & 254,908 \\
+    3,043  & 6,087 & 9,524  & 282,167 \\
+    2,826  & 6,087 & 9,524  & 254,908 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Der Mittelwert ergibt sich zu:
+\begin{equation}
+\overline \kappa = (263,013\pm 8,361)\, \mathrm{\frac{W}{mK}}
+\end{equation}
+Der Wert, für die Leitfähigkeit von Aluminium liegt bei $221\, W/mK$ \cite[275]{b1}\\
+Somit liegt die Abweichung zum Literaturwert bei $19,01\, \% $
+\begin{table}[H]
+  \centering
+  \caption{Edelstahlstab}
+  \label{tab:ed}
+  \begin{tabular}{c c c c}
+    \toprule $A_{7_{nah}}[°C]$ & $A_{8_{fern}}[°C]$ & $\Delta t[s]$ & $\kappa$ \\
+    \midrule
+    9,038 & 1,154 & 50   & 24,876 \\
+    8,077 & 1,154 & 52,7  & 24,965 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Der Mittelwert für die Wärmeleitfähigkeit beträgt
+\begin{equation}
+\overline \kappa = (24,931\pm 0,046)\, \mathrm{\frac{W}{mK}}.
+\end{equation}
+Der zu erwartende Literaturwert liegt bei $15\, W/mK$. \cite{on2}\\
+Die prozentuelle Abweichung beträgt $66,21\, \%$.
+
+
+\section{Diskussion}
+Im ersten Teil wurde der Fehler gemacht die Messung nicht zu beenden, nachdem T7 eine Temperatur von $45\, °C$ angenommen hat.
+Dies führte dazu, dass das Abkühlen ebenfalls auf dem Graphen abgebildet ist
+und im Nachhinein nicht mehr genau nachvollziehbar ist, bis zu welchem Punkt erwärmt wurde.\\
+
+Während des Erwärmens, wurde von einer idealen Isolierung ausgegangen, die so nicht umsetzbar ist,
+sodass davon ausgegangen werden kann, dass bei den Temperaturverläufen eine Ungenauigkeit auftritt.
+
+Die Bestimmung des Wärmestroms von Aluminium war nicht möglich, da keine Messwerte vorhanden sind
+und die Differenz zwischen $T_5$ und $T_6$ in keiner Graphik abgebildet ist.
+
+Da die komplette Auswertung auf den Graphen, die während des Versuchs gedruckt wurden
+basiert, sind alle angegebenen Temperaturen und Zeiten fehlerbehaftet.
+Die Amplituden und die Phasendifferenz wurden ebenfalls mithilfe der Graphen bestimmt.
+Die Ungenauigkeit dieser Methode fällt besonders bei der Phasendifferenz auf.
+Es nur möglich die Differenz auf einen Millimeter genau zu bestimmen.
+Dieser Millimeter macht allerdings einen Unterschied von $4,762\, s$.
+Die Genauigkeit für die Amplitudenmessung liegt zwischen $0,192\, °C$ und $0,25\, °C$ auf je ein Millimeter.\\
+
+Die Bestimmung des Wärmestroms und der Vergleich der berechneten Wärmeleitfähigkeiten mit der Literatur,
+basiert auf den im Literaturverzeichnis angegebenen Quellen.
+Beim herausuchen dieser Quellen fiel auf,
+dass es mehrere unterschiedliche Angaben zu den einzelnen Wärmeleitfähigkeiten gab.
+Somit sind diese Werte nicht als feste Zahl zu betrachten, sondern als eine Nährung.
+Besonders bei Edelstahl wurden Werte in einer größeren Spannweite gefunden,
+da dieser stark von der Legierung abhängig ist.
+
+Zusammenfassend kann gesagt werden, dass der Versuch zu dem Ergebnis führt,
+dass Edelstahl die schlechteste und Aluminium die beste Leitfähigkeit besitzt.

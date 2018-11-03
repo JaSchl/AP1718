@@ -1,0 +1,54 @@
+
+\section{Durchführung}
+\subsection{Vorbereitung}
+Zur Vorbereitung auf den Versuch werden die Fourier-Koeffizienten einer
+Rechteck-, Dreieck- und Sägezahnspannung bestimmt. Dafür wird die Annahme
+gemacht, dass die Funktion entweder gerade oder ungerade sind.
+\subsubsection{Rechteckspannung}
+Für die Bestimmung der Rechteckspannung wird eine ungerade Funktion definiert, aus der sich
+die Koeffizenten:
+\begin{align*}
+ a_{0} = 0,\ \text{da}\ f(t)\ \text{ungerade}\\
+ a_{n} = 0,\ \text{da}\ f(t)\ \text{ungerade}\\
+ b_{n} =	\begin{cases}
+			\dfrac{2}{n\pi} ,\ \text{für}\ n\ \text{ungerade}\\ \\
+      0 ,\ \text{für}\ n\ \text{gerade}\\\\
+		\end{cases}
+\end{align*}
+berechnen lassen.
+
+\subsubsection{Dreieckspannung}
+Die Fourrierkoeffizienten einer geraden Funktion berechnen sich zu:
+\begin{align*}
+  a_{n} =  \begin{cases}
+ 					\dfrac{-4}{(n\pi)^{2}} ,\ \text{für}\ n\ \text{ungerade}\\ \\
+ 					0 ,\ \text{für}\ n\ \text{gerade}\\\\
+ 				\end{cases}\\
+  b_{n} = 0,\ \text{da}\ f(t)\ \text{gerade}\\
+\end{align*}
+
+\subsubsection{Sägezahnspannung}
+Zur Berechnung einer Sägezahnspannung wird wie bei der Rechteckspannung eine
+ungerade Funktion verwendet. Daraus folgt für die Amplituden der Oberschwingung:
+\begin{align*}
+ a_{0} = 0,\ \text{da}\ f(t)\ \text{ungerade}\\
+ a_{n} = 0,\ \text{da}\ f(t)\ \text{ungerade}\\
+ b_{n} = (-1)^{n+1} \dfrac{2T}{n\pi}.
+\end{align*}
+\subsection{Fourier-Analyse}
+Der Versuchsaufbau der Fourier-Analyse besteht aus einem Funktionsgenerator,
+der als Signalquelle dient, und einem Digitaloszilloskop. Vom Funktionsgenerator
+werden jeweils Rechteck-, Dreieck- und Sägezahnspannugen erzeugt. Durch eine
+Fast-Fourier-Transformation sind die generierten Spannungen auf dem Oszilloskop
+zu sehen. Anhand dessen können die Frequenzen und die Amplituden der Peaks
+abgelesen werden.
+
+\subsection{Fourier-Synthese}
+Für den zweiten Teil des Versuchs wird zusätzlich ein Oberwellengenerator eingeschaltet.
+Bei der Fourier-Synthese werden mit dem Oberwellengenerator bis zu neun Sinus-Schwingungen
+mit ganzzahligem Frquenzverhältnis eingespeist.
+Im Gegensatz zur Fourier-Analyse bleibt die Phase bei diesem Teil des Experiments
+allerdings konstant. Zu Beginn werden die Phasen anhand der Lissajous-Figuren des
+Phasenverhältnis der Grundschwingung und der jeweiligen Überschwingung eingestellt
+und während des gesamten Versuchs nicht verändert. Durch das schrittweise Einschalten
+der einzelnen Oberwellen ist die Summenschwingung am Oszilloskop zu sehen.

@@ -1,0 +1,57 @@
+
+\section{Theorie}
+Sich wiederholende Vorgänge, welche nach einer Periodendauer $T$ oder einer Distanz $D$
+erneut ihren Anfängswert annehmen, werden als periodische Vorgänge bezeichnet.
+Sie lassen sich durch
+\begin{align}
+  f(t+T) &= f(t)
+\end{align}
+beziehungsweise
+\begin{align}
+  f(x+D) &= f(x)
+\end{align}
+beschreiben. Die häufigsten periodischen Funktionen sind die Sinus- und Cosinusfunktionen.
+Diese sind $2\pi$ periodische und im Wertebereich von -1 und 1 definiert.
+Mit ihrer Amplitude $a$ oder $b$ und der Periodendauer $T$ können sie als
+\begin{align}
+ f(t) &= a\cos(n\frac{2\pi}{T}t)
+\end{align}
+beziehungsweise
+\begin{align}
+ f(t) &= b\sin(n\frac{2\pi}{T}t)
+\end{align}
+dargestellt werden. Fast alle anderen stetige, periodischen Vorgänge der Natur können
+durch sie beschrieben werden. Für diese gilt das Fouriersche Theorem
+\begin{equation}
+f(t) = \frac{a_0}{2} + \sum_{n=1}^\infty (a_n cos(n\frac{2\pi}{T}t) + b_n sin(n\frac{2\pi}{T}t)),
+\end{equation}
+wenn sie stetig sind, die Reihe also gleichmäßig konvergiert.
+Die Koeffizienten $a_n$ und $b_n$ beschreiben die Amplituden der Oberschwingungen und können durch
+\begin{equation}
+a_n = \frac{T}{2}\int_{0}^{T} f(t) \cos(n\frac{2\pi}{T}t) dt
+\end{equation}
+und
+\begin{equation}
+b_n = \frac{T}{2}\int_{0}^{T} f(t) \sin(n\frac{2\pi}{T}t) dt
+\end{equation}
+berechnet werden.
+In der Fourier-Entwicklung treten lediglich Vielfache der Grundvfrequenz $v = \frac{1}{T}$ auf,
+welche auch als harmonische Oberschwingungen bezeichnet werden. 0, $\frac{\pi}{2}$, $\pi$ und $2\pi$
+können dabei nur als Phasen vorkommen.
+\newline
+
+Zur Bestimmung von $a_n$ und $b_n$ wird eine Fourier-Analyse durchgeführt. Je nach Funktion
+können die Koeffizienten wegfallen. Für gerade Funktionen gilt $a_n = 0$ und für ungerade
+$b_n = 0$.
+
+Auch nicht stetige Funktionen lassen sich durch eine Fourierreihe nähern. Allerdings tritt
+dann an der Unstetigkeitsstelle $t_0$ eine endliche Abweichung der Reihe von der Funktion auf.
+Dies wird als Gibbsches Phänomen bezeichnet.
+
+Mit Hilfe einer Fourier-Transformation kann das gesamte Frequenzspektrum einer zeitabhänigigen
+Funktion bestimmt werden:
+\begin{equation}
+g(v) = \int_{-\infty}^{\infty} f(t) e^{ivt} dt.
+\end{equation}
+Die Funktion $g(v)$ stellt dabei das Frequenzspektrum der Funktion $f$ dar, welche selbst für
+nicht-periodische Funktionen gilt.

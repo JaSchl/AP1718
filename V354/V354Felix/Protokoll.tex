@@ -1,0 +1,79 @@
+\documentclass[bibliography=totoc]{scrartcl}
+\usepackage{scrhack}
+\usepackage[a4paper,top=2.5cm,right=2.5cm,bottom=3cm,bindingoffset=5mm]{geometry}
+\usepackage[aux]{rerunfilecheck}
+
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+\usepackage{biblatex}
+\addbibresource{lit.bib}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\usepackage{fontspec}
+
+\usepackage[
+  math-style=ISO,
+  bold-style=ISO,
+  sans-style=italic,
+  nabla=upright,
+  partial=upright,
+]{unicode-math}
+
+\usepackage[
+  locale=DE,
+  separate-uncertainty=true,
+  per-mode=symbol-or-fraction,
+]{siunitx}
+
+%\usepackage[section]{placeins}
+\usepackage{subcaption}
+\usepackage{float}
+\restylefloat{table}
+
+\usepackage{booktabs}
+
+\usepackage[unicode]{hyperref}
+\usepackage{bookmark}
+\usepackage{microtype}
+\usepackage[section]{placeins}
+\usepackage{caption}
+\usepackage{eso-pic}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{microtype}
+\usepackage{xfrac}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\setkomafont{captionlabel}{\normalsize\bfseries}
+
+\begin{document}
+\begin{titlepage}
+  \centering
+  \includegraphics[width=0.5\textwidth]{tud_logo_rgb.jpg}\par\vspace{2cm}
+  {\scshape\LARGE Technische Universität Dortmund \par}
+  \vspace{1.5cm}
+  {\scshape\Large Physikalisches Praktikum\par}
+  \vspace{1.5cm}
+  {\scshape\LARGE\bfseries V354 - Gedämpfte und erzwungene Schwingungen\par}
+  \vspace{2.5cm}
+  {\Large Felix Landmeyer, felix.landmeyer@tu-dortmund.de \par\vspace{0.25cm}
+    Lars Röhrig, lars.roehrig@tu-dortmund.de\par}
+  \vspace{2cm}
+  {\scshape Durchführung am 9. Dezember 2016 \par
+    Abgabe am 16. Dezember 2016\par
+    Korrekturabgabe am 13. Januar 2017}
+\end{titlepage}
+
+  \tableofcontents
+  \newpage
+  \input{Einleitung.tex}
+  \input{Theorie.tex}
+  \input{Aufbau_Durchfuehrung.tex}
+  \input{Auswertung.tex}
+  \input{Diskussion.tex}
+  \printbibliography
+\end{document}

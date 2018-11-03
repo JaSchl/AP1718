@@ -1,0 +1,183 @@
+
+%Formeln, die benötigt werden für die Auswertung: c_k=.. habe ich mit \ref{eqn:Wärmekapazität} bezeichnet
+%und dann noch für c_v=... das ist dann \ref{eqn:cv}
+%und c_gm_g=.. für \ref{eqn:cm}
+\section{Auswertung}
+\subsection{Wärmekapazität des Kalorimeters}
+Zu Beginn des Versuchs wird die spezifische Wärmekapazität $c_gm_g$ des Kalorimeters bestimmt,
+da diese zur Bestimmung der Wärmekapazitäten von Graphit, Aluminium und Zinn benötigt wird.
+Um diese zu bestimmen, werden die Temperaturen $T_x$, $T_y$ und $T_m$ und die Massen $m_x$ und $m_y$ abgelesen.
+\newline
+\begin{table}
+  \centering
+  \caption{Messwerte für das Kalorimeter}
+  \begin{tabular}{c c c c c}
+    \toprule
+    $m_x$\,[g] & $T_x$\,$[\si{\degreeCelsius}]$& $m_y\,$ [g] & $T_y$\,$[\si{\degreeCelsius}]$ & $T_m$\,$[\si{\degreeCelsius}]$\\
+    \midrule
+    363.61 & 21.6 & 249.32 & 98.0 & 48.4\\
+    \bottomrule
+    \label{fig:kalorimeter}
+  \end{tabular}
+\end{table}
+\newline
+Mit Formel \ref{eqn:cm},den Messwerten aus Tabelle \ref{fig:kalorimeter} und der spezifischen Wärmekapazität für
+für Wasser mit $c_w= 4.18\,\frac{\text{J}}{\text{gK}}$ ergibt
+sich für die spezifische Wärmekapazität des Kalorimeters ein Wert von
+\begin{equation*}
+  c_gm_g = 408.88 \frac{\text{J}}{\text{K}}.
+\end{equation*}
+\subsection{Graphit}
+Für die Bestimmung der Wärmpekapazität von Graphit wurden vier Messungen durchgeführt,
+da bei der ersten Messungen ein systematischer Fehler begangen wurde. Deshalb wird diese
+bei den Berechnung nicht weiter berücksichtigt, da sonst die Fehler sehr groß werden.
+\newline
+\begin{table}
+  \centering
+  \caption{Messwerte für Graphit}
+  \begin{tabular}{c c c c c c}
+    \toprule
+    $\text{Messung}$ & $T_w$ $[\si{\degreeCelsius}]$ & $T_g$$ [\si{\degreeCelsius}]$ & $T_m$ $[\si{\degreeCelsius}]$ &  $c_k[\frac{\text{J}}{\text{gK}}]$\\
+    \midrule
+     1 & 22.6 & 43.0 & 26.0 & 6.20\\
+     2 & 25.1 & 75.2 & 27.2 & 1.36\\
+     3 & 27.6 & 74.8 & 29.2 & 1.09\\
+     4 & 29.3 & 68.9 & 30.6 & 1.05\\
+    \bottomrule
+    \label{fig:graphit}
+  \end{tabular}
+\end{table}
+\newline
+Die Masse des Gewichtes betrug dabei $m_g=101.28$\,g und die Masse des Wassers $m_w=652.73$\,g.
+Mit den Messwerten aus Tabelle \ref{fig:graphit} und Formel \ref{eqn:Wärmekapazität}
+lässt sich eine spezifische Wärmekapazität von
+\begin{align*}
+  c_{\text{Graphit}} = (1.16\pm 0.10)\, \frac{\text{J}}{\text{gK}}
+\end{align*}
+bestimmen.
+Der Mittelwert und die Standardabweichung errechnen sich dabei durch
+\begin{equation}
+  \bar{x} = \frac{1}{n} \sum{x_n}
+  \label{eqn:Mittelwert}
+\end{equation}
+und
+\begin{equation}
+\upsigma = \frac{1}{\sqrt{n}} \sqrt{\frac{\sum{(x_n - \bar{x})^2}}{n-1} }.
+\label{eqn:Standardabweichung}
+\end{equation}
+Zur Berchnug der Molwärmen für Graphit werden die materialspezifischen Werte in
+Formel \ref{eqn:cv} eingesetzt. Daraus folgt für die einzelnen Messung für Graphit
+\begin{align*}
+ C_{\text{Graphit,2}} = 16.23\, \frac{\text{J}}{\text{molK}} \\
+ C_{\text{Graphit,3}} = 13.01\, \frac{\text{J}}{\text{molK}} \\
+ C_{\text{Graphit,4}} = 12.59\, \frac{\text{J}}{\text{molK}}.
+\end{align*}
+und für die mit \ref{eqn:Mittelwert} und \ref{eqn:Standardabweichung} gemittelte
+Molwärme für Graphit
+\begin{align*}
+  C_{\text{Graphit}} = (13.94\pm 1.15)\, \frac{\text{J}}{\text{molK}}.
+\end{align*}
+\subsection{Aluminium}
+\begin{table}
+  \centering
+  \caption{Messwerte für Aluminium}
+  \begin{tabular}{c c c c c c}
+    \toprule
+    $T_w$ $[\si{\degreeCelsius}]$ & $T_a$ $[\si{\degreeCelsius}]$ & $T_m$$[\si{\degreeCelsius}]$ &$c_k[\frac{\text{J}}{\text{gK}}]$ \\
+    \midrule
+     31.3 & 45.6 & 33.7 & 4.71\\
+    \bottomrule
+  \end{tabular}
+  \label{fig:aluminium}
+\end{table}
+Die Masse des Gewichtes betrug $m_a=147.72$\,g und die Masse des Wassers $m_w=728.08$\,g.
+Für die einmalige Messung der spezifische Wärmekapazität von Aluminium lässt sich mit Tabelle \ref{fig:aluminium}
+und \ref{eqn:Wärmekapazität} ein Wert von
+\begin{align*}
+  c_{\text{Aluminium}} = 4.71\, \frac{\text{J}}{\text{gK}}
+\end{align*}
+berechnen. Aus diesem folgt mit den Aluminium-spezifischen Eigenschaften und \ref{eqn:cv} eine Molwärme von
+\begin{align*}
+  C_{\text{Aluminium}} = 126.12 \, \frac{\text{J}}{\text{molK}}.
+\end{align*}
+\subsection{Zinn}
+Wie bei den anderen Metallen wird auch bei dem schweren Metall Zinn zuerst die Wärmekapazität
+und damit die Molwärme berechnet.
+\begin{table}
+  \centering
+  \caption{Messwerte für Zinn}
+  \begin{tabular}{c c c c c}
+    \toprule
+    $\text{Messung}$ & $T_w$ $[\si{\degreeCelsius}]$ & $T_z$ $[\si{\degreeCelsius}]$& $T_m$ $[\si{\degreeCelsius}]$ & $c_k[\frac{\text{J}}{\text{gK}}]$\\
+    \midrule
+     1 & 33.2 & 49.7 & 34.0 & 0.86\\
+     2 & 33.9 & 54.7 & 34.6 & 0.59\\
+     3 & 34.4 & 53.2 & 35.1 & 0.65\\
+    \bottomrule
+  \end{tabular}
+  \label{fig:zinn}
+\end{table}
+\newline
+Die Masse des Gewichts betrug dabei $m_z=214.50$\,g und die Masse des Wassers $m_w=769.81$\,g.
+Mit dem Einsetzen der Werte aus Tabelle \ref{fig:zinn} in \ref{eqn:Wärmekapazität} ergibt sich
+für die spezifische Wärmekapazität von Zinn ein Wert von
+\begin{align*}
+  c_{\text{Zinn}} = (0.70\pm 0.08)\, \frac{\text{J}}{\text{gK}}.
+\end{align*}
+Für die mehrfach gemessen Molwärmen von Zinn mit \ref{eqn:cv} folgt
+\begin{align*}
+C_{\text{Zinn,1}} = 100.46\, \frac{\text{J}}{\text{molK}} \\
+C_{\text{Zinn,2}} = 68.08\, \frac{\text{J}}{\text{molK}} \\
+C_{\text{Zinn,3}} = 75.80\, \frac{\text{J}}{\text{molK}}.
+\end{align*}
+Mittels \ref{eqn:Mittelwert} und \ref{eqn:Standardabweichung} folgt für die spezifische
+Molwärme von Zinn
+\begin{align*}
+  C_{\text{Zinn}} = (81.45\pm 9.76)\, \frac{\text{J}}{\text{molK}}.
+\end{align*}
+\newpage
+\section{Diskussion}
+Für die Bestimmung der Molwärmen der Metalle Graphit, Aluminium und Zinn kam es beim
+Abnehmen der Messwerte zu einigen Ungenauigkeiten. In der folgenden Tabelle sind diese
+noch einmal aufgelistet:
+\newline
+\begin{table}
+  \centering
+  \caption{Vergleich der Messwerte mit dem Theoriewert}
+  \label{fig:dis}
+  \begin{tabular}{c c c}
+    \toprule
+    $\text{Metalle}$ & $\text{Molwärme}[\frac{\text{J}}{\text{molK}}]$ & $\text{Prozentuale Abweichung}[\%]$\\
+    \midrule
+     Graphit & 13.94\pm 1.15 & -44.11 \\
+     Aluminium & 126.12 & 405.69 \\
+     Zinn & 81.45\pm 9.76 & 226.58\\
+    \midrule
+    Theoriewert & 24.94\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\newline
+Wie in Tabelle (\ref{fig:dis}) zu sehen ist, sind die Abweichungen von den gemessen Molwärmen zu den theoretischen
+ziemlich groß. Lediglich die gemessene Molwärme für Graphit mit $13.94\,\frac{\text{J}}{\text{molK}}$ liegt in dem zu
+erwartenen Bereich bis zu $25\,\frac{\text{J}}{\text{molK}}$. Durch die Molwärme kann geschlossen
+werden, dass Graphit das leichteste gemessene Metall in diesem Versuch war.
+\newline
+Die bestimmten Molwärmen für Aluminium und Zinn sind allerdings viel größer als die Theoriewerte.
+Dies lässt sich auf die Berechnung des $c_gm_g$-Wertes zurückführen. Mit den errechneten $408.88\,\frac{\text{J}}{\text{molK}}$
+ist dieser Wert fast doppelt so groß wie der zu erwartende Wert von $200-300\,\frac{\text{J}}{\text{molK}}$.
+\newline
+Dieser starker Unterschied zwischen gemessen und theoretischen Werten lässt sich zu mindest zum Teil
+durch die vielen Messungenauigkeiten erklären. Besonders die Temperaturen scheinen im Gegensatz
+zu den Massen relativ ungenau zu sein. Das Abkühlen des Thermometers nach dem Messen dauerte sehr lange
+und hatte beim Messen der Wassertemperatur noch vermutlich etwas Restwärme.
+%evtl noch die Ungenauigkeit beim Messen der Temeratur der Proben wegen des temperaturfühlers.
+\newline
+Ein weiterer Punkt war die hohe Befestigung der Massen an dem Deckel, wodurch es
+schwierig war das ganze Metall unter Wasser zu bringen, da es sonst überkochte. Weiterhin wurde im Laufe
+der wiederholten Messung von Graphit und Zinn das Wasser nicht immer wieder aufgefüllt. Außerdem fand durch die fehlende
+Isolation der Messkörper ein Wärmeaustausch mit der Luft statt.
+\newline
+Durch die sehr großen Abweichungen der Messwerte zu den Theoriewerten wird deutlich, dass die oszillatorischen
+Bewegungen der Atome in Festkörpern quantenmechanisch betrachtet werden müssen, obwohl dabei nicht die
+vielen Fehlerquellen während der Durchführung des Versuchs außer Acht gelassen werden dürfen.

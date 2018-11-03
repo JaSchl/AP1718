@@ -1,0 +1,28 @@
+\section{Zielsetzung}
+Ziel dieses Versuchs ist der Umgang mit den Fourier-Koeffizienten.
+\section{Theorie}
+Die Beschreibung vieler periodischer Funktionen erfolgt durch das Fouriersche Theorem:
+\begin{equation}
+f(t) = \frac{a_0}{2} + \sum_{n=1}^\infty (a_n cos(n\frac{2\pi}{T}t) + b_n sin(n\frac{2\pi}{T}t)).
+\end{equation}
+Die Koeffizienten $a_n$ und $b_n$ beschreiben die Amplituden der Oberschwingungen und können durch
+\begin{equation}
+a_n = \frac{T}{2}\int_{0}^{T} f(t) \cos(n\frac{2\pi}{T}t) dt
+\end{equation}
+und
+\begin{equation}
+b_n = \frac{T}{2}\int_{0}^{T} f(t) \sin(n\frac{2\pi}{T}t) dt
+\end{equation}
+berechnet werden.
+Um das Rechnen mit dem Theorem zu erleichtern, bietet es sich an, eine gerade oder ein ungerade
+Funktion zu wählen. Für eine gerade Funktion sind die Koeffizienten $b_n$ gleich 0, und für eine ungerade Funktion
+die Koeffizienten $a_n$.
+Dabei ist es unerlässlich, dass die Reihe gleichmäßig konvergent und somit stetig an jeder Stelle ist.
+Ist die Funktion an einer Stelle unstetig, wird von dem Gibbschen Phänomen gesprochen. Dieses beschreibt den Fall,
+dass die Funtkion nicht mehr durch die Fourierreihe genähert werden kann, was eine endliche Abweichung zur Folge hat.
+
+Mithilfe der Fourier-Transformation kann das gesamte Frequenzspektrum einer zeitabhänigen Funktion
+bestimmt werden, welche nicht periodisch sein muss:
+\begin{equation}
+g(v) = \int_{-\infty}^{\infty} f(t) e^{ivt} dt.
+\end{equation}

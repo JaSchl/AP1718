@@ -1,0 +1,45 @@
+\begin{table}
+  \centering
+  \caption{Schwingungsdauern bei jeweiligen Abständen.}
+  \label{tab:data2}
+  \begin{tabular}{c c c c }
+    \toprule $a \, \,  in \,\, m$ & $a^2 \,\, in \,\,  m^2$ & $T \,\, in \,\, s$ & $T^2 \,\, in  \,\, s^2$ \\
+    \midrule
+    0.03 & 0.0009 & 2.06 &  4.2436\\
+    0.06 & 0.0036 & 2.29 &  5.2441\\
+    0.09 & 0.0081 & 3.21 &  10.3041\\
+    0.12 & 0.0144 & 4.16 &  17.3056\\
+    0.15 & 0.0225 & 4.81 &  23.1361\\
+    0.18 & 0.0324 & 5.41 &  29.2681\\
+    0.21 & 0.0441 & 6.38 &  40.7044\\
+    0.24 & 0.0579 & 7.16 &  51.2656\\
+    0.27 & 0.0729 & 7.52 &  56.5504\\
+    0.29 & 0.0841 & 8.49 &  72.0801\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{plot1.pdf}
+  \caption{Die Quadrate der Schwingungsdauer gegenüber den Abstandsquadraten}
+\end{figure}
+
+Die lineare Regression wird mittels Python durchgeführt. Für die Gerade
+\begin{align}
+  T^2 &= m * a^2 + n\\
+\end{align}
+ergeben sich die Steigung $m = (784 \pm 26) \frac{s^2}{m^2}$ und der y-Achsenabschnitt $n = (4.3 \pm 1.1) s^2$.
+
+Für die Berechnung des Eigenträgheitsmoments der Drillachse wird Formel () und die Formel
+\begin{align}
+I_{Stange} &= \frac{1}{12} \cdot m_{Stange} \cdot H_{Stange}^2
+\end{align}
+für einen langgen dünnen Stab verwendet. Mithilfe von
+\begin{align}
+  I_D        &= I_{ges} - 2 \cdot I_{Z} - I_{Stange}\\
+             &= \frac{b \cdot D_{dyn}}{4 \pi^2} - 2 \cdot I_{Z} - I_{Stange}\\
+\end{align}
+lässt sich das Eigenträgheitsmoment von
+\begin{equation}
+  I_D = (-2.83 \pm 0.000)\cdot10^{-3} \symup{kg m^2}
+\end{equation}

@@ -1,0 +1,5 @@
+[1] Config.pm:354> INFO - This is Biber 2.7
+[2] Config.pm:357> INFO - Logfile is 'proto.bib.blg'
+[113] biber:303> INFO - === Mo Dez 18, 2017, 17:39:52
+[378] Utils.pm:180> ERROR - Cannot find control file 'proto.bib.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[379] Biber.pm:113> INFO - ERRORS: 1

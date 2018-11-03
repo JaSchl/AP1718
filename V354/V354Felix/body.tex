@@ -1,0 +1,43 @@
+\section{Aufbau und Durchführung}
+\subsection{Abklingdauer $T_\text{ex}$ und Dämpfungsstand $R_\text{eff}$}
+\begin{wrapfigure}{r}{0.4\textwidth}
+  \centering
+  \includegraphics[width=0.4\textwidth]{Schaltung_Daempfung.png}
+  \caption{Versuchsaufbau \cite{anleitung}.}
+  \label{fig:Daempfung}
+\end{wrapfigure}
+Um die Abklingdauer $T_\text{ex}$ und den effektiven Dämfungswiderstand $R_\text{eff}$ der Schwingungsamplitude
+des RLC-Schwingkreises aus Abbildug \ref{fig:Daempfung} zu berechnen, wird der kleinere der beiden festen Widerstände $R_\text{1}$ verwendet.
+An dem Impulsgenerator wird eine Rechteckspannung erzeugt und mit dem Oszilloskop der Bereich der gedämpften Schwingung angezeigt.
+Die Amplitude der Schwingung sollte bis auf den Faktor 8 abgeklungen sein, bevor ein neuer Impuls erzeugt wird.
+Anhand der Einhüllenden der Schwingung kann dann $T_\text{ex}$ nach Gleichung \eqref{eqn:abkling} und $R_\text{eff}$ nach \eqref{eqn:mu}
+ bestimmt werden.
+\bigskip
+\subsection{Durchführung der Bestimmung von $R_\text{ap}$}
+Der Widerstand $R_\text{ap}$, bei dem die Schwingung das Verhalten eines aperiodischen Grenzfall besitzt, wird mit dem gleichen Aufbau
+wie in Abbildung \ref{fig:Daempfung} bestimmt. Hier wird jedoch der feste Widerstand $R_\text{1}$ gegen einen variablen Widerstand
+$R_\text{5\si{\kilo\ohm}}$ von $0-5 \; \si{\kilo\ohm}$ ausgetauscht.
+Der Widerstand wird zuerst auf sein Maximum gestellt, sodass sich ein Kriechfall des Schwingkreises einstellt. Er wird nun so lange verringert,
+bis sich der aperiodische Grenzfall einstellt. Dieser wird erreicht, wenn kein Überschwingen zu beobachten ist. Dazu wird sich langsam
+mit dem Widerstand dem Wert angenähert, an dem gerade kein Überschwingen der Frequenz zu sehen ist.
+\par
+\subsection{Frequenzabhängigkeit der Kondensatorspannung}
+Da auch die Ausgangsspannung des Tastkopfes von der Frequenz abhängt, muss die Spannung $U$ über den Tastkopf gemessen werden.
+Bei dieser Messung wird der größere der festen Widerstände $R_\text{2}$ verwendet. Die Sinusspannung wird am Generator variiert.
+Zunächst wird der Spannungsbereich grob eingestellt, um die Resonanzfrequenz zu finden. Der Bereich um die Resonanzfrequenz wird in
+$1000\,\si{\hertz}$-Schritten vermessen.
+
+\subsection{Frequenzabhängigkeit der Phase}
+\begin{wrapfigure}{r}{0.5\textwidth}
+  %\vspace{-10pt}
+  \centering
+  \includegraphics[width=0.5\textwidth]{Schaltung_Frequenzabhaengigkeit_Phase.png}
+  %\vspace{-5pt}
+  \caption{Versuchsaufbau \cite{anleitung}.}
+  %\vspace{-5pt}
+  \label{fig:Phase}
+\end{wrapfigure}
+Über das Zweikanal-Oszilloskop wird sowohl die Schwingung des LRC-Schwingkreis als auch die Erregerschwingung angezeigt.
+Ein Aufbau der benötigten Schaltung ist in Abbildung \ref{fig:Phase} gezeigt.
+Es wird die Phasendifferenz der Schwingungen in Abhängigkeit der Frequenz gemessen. Im Oszilloskop werden beide Spannungsverläufe parallel
+ angezeigt. Die vorherigen Werte werden erneut eingestellt und der Abstand der Maxima bzw. Minima vermessen.

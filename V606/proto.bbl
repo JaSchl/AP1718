@@ -1,0 +1,63 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{Anleitung}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={TU},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuchsanleitung zu Versuch 408}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://129.217.224.2/HOMEPAGE/MEDPHYS/BACHELOR/AP/SKRIPT/V606.pdf
+      \endverb
+    \endentry
+    \entry{Wert}{online}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labeltitlesource}{title}
+      \field{title}{Wert}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://www.webqc.org/mmcalc.php
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

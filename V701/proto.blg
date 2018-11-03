@@ -1,0 +1,15 @@
+[1] Config.pm:302> INFO - This is Biber 2.11
+[1] Config.pm:305> INFO - Logfile is 'proto.blg'
+[73] biber:313> INFO - === Di Jul 10, 2018, 01:28:22
+[138] Biber.pm:371> INFO - Reading 'proto.bcf'
+[295] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[332] Biber.pm:3976> INFO - Processing section 0
+[355] Biber.pm:4136> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[358] bibtex.pm:1500> INFO - LaTeX decoding ...
+[364] bibtex.pm:1316> INFO - Found BibTeX data source 'lit.bib'
+[404] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[404] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[405] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[405] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[419] bbl.pm:617> INFO - Writing 'proto.bbl' with encoding 'UTF-8'
+[421] bbl.pm:720> INFO - Output to proto.bbl

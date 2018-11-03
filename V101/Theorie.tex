@@ -1,0 +1,72 @@
+\section{Zielsetzung}
+Ziel dieses Versuchs ist die Bestimmung der Trägheitsmomente verschiedener Körper.
+\section{Theorie}
+
+Als Trägheitsmoment wird der Widerstand eines Körpers gegen die Änderung seiner Rotation beschrieben,
+welches abhängig von der Masse $M$ und dem Radius $r$ ist.
+Die rotierenden Punktmasse besitzt ein Trägheitsmoment von $I = mr^2$.
+Durch das Aufsummieren der einzelnen Trägheitsmomente wird das Gesamtträgheitsmoment berechnet.
+\begin{align}
+ I= \sum_{i = 0}^n r_i^2\cdot m_i
+ \end{align}
+ Entsprechend gilt für eine kontinuierliche Massenverteilung
+ \begin{equation}
+   \label{eqn:Trägheitsmoment}
+   I = \int r^2\mathup{dm}
+ \end{equation}
+
+Zur Berechnung der Trägheitsmomente bekannter Symmetrien wurden folgenede Formeln verwendet:
+
+\emph{Kugel}:
+
+\begin{align}
+  I_K = \frac{2}{5}mR^2
+  \label{eqn:3}
+\end{align}
+
+\emph{Zylinder}:
+
+\begin{align}
+I_{Z} &= \frac{mR^2}{2} &
+   I_{Zh} = m(\frac{R^2}{4} + \frac{h^2}{12})
+   \label{eqn:4}
+\end{align}
+Die erste Formel beschreibt ein Zylinder mit der Rotationsachse durch den langen Teil des Zylinders.
+Die Zweite Formel gilt für einen horizontal liegenden Zylinder mit der Rotationsachse
+durch den kurzen Teil, der Breite $d$, in der Mitte des Zylinders.
+Wichtig zu beachten ist, dass dabei die Rotationsachse durch den Schwerpunkt
+ des Körpers verläuft.
+Ist dies nicht der Fall beschreibt der \textit{Satz von Steiner}
+das Trägheitsmoment bei einer von dem Schwerpunkt verschiedenen Rotationsachse.
+$I_s$ ist das Trägheitsmoment bezüglich der Schwerpunktsachse
+und $a$ der Abstand der Drehachse zur Schwerpunktsachse:
+
+\begin{equation}
+  \label{eqn:Steiner}
+  I = I_s +m\cdot a^2
+\end{equation}
+
+\subsection{Bestimmung der Trägheitsmomente}
+Für das Drehmoment gilt:
+\begin{equation}
+  \vec{M} = \vec{F} \times \vec{r}
+  \label{eqn:6}
+\end{equation}
+In einem schwingungsfähigen System hängen Trägheitsmoment und Schwingungsdauer zusammen.
+Dieser Zusammenhang wird durch
+
+\begin{equation}
+  T = 2\pi \sqrt{\frac{I}{D}}
+  \label{eqn:7}
+\end{equation}
+
+beschrieben, wobei $I$ für das Trägheitsmoment des Körpers und $D$ für die
+Winkelrichtgröße steht.
+Für kleine Winkel lässt sich der Betrag des Drehmoments als
+
+\begin{equation}
+  M = D \cdot\varphi
+  \label{eqn:8}
+\end{equation}
+
+mit dem Auslenkwenkel $\varphi$ darstellen.

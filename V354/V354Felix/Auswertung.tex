@@ -1,0 +1,175 @@
+\section{Auswertung}
+Zur Auswertung werden folgende Daten verwendet:
+\begin{align*}
+  L &= (10.11\pm0.03)\,\si{\milli\henry} \\
+  C &= (2.098\pm0.006)\,\si{\nano\farad} \\
+  R_\text{1} &= (48.1\pm0.1)\,\si{\ohm}\\
+  R_\text{2} &= (509.5\pm0.5)\,\si{\ohm}
+\end{align*}
+\subsection{Effektivwiderstand $R_\text{eff}$ und Abklingdauer $T_\text{ex}$}
+Zur weiteren Auswertung werden die in Tabelle \ref{tab:amptime} aufgeführten Werte für die Spannungsamplitude $U_\text{C}$ und die zugehörige Zeit $t$ verwendet.
+\begin{table}[!h]
+  \centering
+  \caption{Messdaten zur Auswertung der Abklingsdauer und des Dämpfungswiderstandes.}
+  \begin{tabular}{cc||cc||cc}
+    \toprule
+    {$U_\text{C}\,/\,\si{\volt}$} & {$t\,/\,\si{\micro\second}$} & {$U_\text{C}\,/\,\si{\volt}$} & {$t\,/\,\si{\micro\second}$} &
+    {$U_\text{C}\,/\,\si{\volt}$} & {$t\,/\,\si{\micro\second}$} \\
+    \midrule
+    19.4 & 8   & 7.8 & 88  & 3.4 & 168 \\
+    17.6 & 16  & 7.0 & 96  & 3.0 & 176 \\
+    16.0 & 24  & 6.6 & 104 & 2.8 & 184 \\
+    14.4 & 32  & 6.2 & 112 & 2.6 & 192 \\
+    13.6 & 40  & 5.4 & 120 & 2.4 & 200 \\
+    12.0 & 48  & 5.2 & 128 & 2.2 & 208 \\
+    11.2 & 56  & 4.8 & 136 & 2.2 & 216 \\
+    10.4 & 64  & 4.4 & 144 & 2.0 & 224 \\
+    9.4  & 72  & 4.0 & 152 & 1.8 & 232 \\
+    8.6  & 80  & 3.6 & 160 &     &     \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:amptime}
+\end{table}
+
+
+Durch die gedämpfte Schwingung ergibt sich eine Einhüllende, die sich mit $U(t) \propto I(t)$ zu
+\begin{equation}
+  A = A_\text{0}\,e^{-2\pi\mu t}
+\end{equation}
+ergibt. Wird eine lineare Ausgleichsrechnung durchgeführt, ergeben sich als Ergebnisse:
+\begin{align*}
+  A_\text{0} &= (20.85 \pm 0.11)\,\si{\volt}\\
+  \mu &= (1746.13 \pm 12.60)\,\si[per-mode=symbol]{\per\micro\second}
+\end{align*}
+
+Eingesetzt errechnen sich der Effektivwiderstand $R_\text{eff}$ \eqref{eqn:mu} und $T_\text{ex}$ \eqref{eqn:abkling}:
+\begin{align*}
+  R_\text{eff} &= (221.84 \pm 1.64)\,\si{\ohm}\\
+  T_\text{ex} &= (911 \pm 7)\,\si{\milli\second}
+\end{align*}
+Der effektive Widerstand weicht somit um $173.38 \, \si{\ohm}$ vom eingebauten Widerstand $R_\text{1}$ ab.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.75\textwidth]{Plotgedaempft.pdf}
+  \caption{Einhüllende der Schwingung in einem halblogarithmischen Plot.}
+  \label{fig:efunc}
+\end{figure}
+
+\subsection{aperiodischer Grenzfall}
+Zur Berechnung des Widerstandes im Fall des apriodischen Granzfalls wird die Gleichung \eqref{eqn:apGrenzfall} nach $R$ umgestellt.
+Für den theoretischen Wert von $R_\text{theo}$ folgt damit
+\begin{equation}
+  R_\text{theo} = (4.39 \pm 0.53) \, \si{\kilo\ohm} %(4390.387 \pm 53.185)
+\end{equation}
+Anhand der Messung ergibt sich für den Widerstandswert des aperiodischen Grenzfalls
+\begin{equation}
+  R =  3.35 \, \si{\kilo\ohm}.
+\end{equation}
+Es ergibt sich somit eine relative Abweichung vom theoretischen Wert von $23 \, \si{\percent}$.
+
+\subsection{Güte $q$ und Resonanzkurve}
+Zur Berechnung der Güte $q$ sowie der Breite der Resonanzkurve $\nu_{+} - \nu_{-}$ werden die Daten in Tabelle \ref{tab:Reso} aufgeführt.
+Die für den Quotienten benötigte Generatorspannung beträgt $U=6.8\,\si{\volt}$.
+\begin{table}[!h]
+  \centering
+  \caption{Messwerte zur Berechnung der Güte und Breite der Resonanzkurve}
+  \begin{tabular}{ccc||ccc}
+    \toprule
+    {$\nu\,/\,\si{\kilo\hertz}$} & {$\frac{U_\text{C}}{U}$} & {$U_\text{C}$\,/\,\si{\volt}} &
+    {$\nu\,/\,\si{\kilo\hertz}$} & {$\frac{U_\text{C}}{U}$} & {$U_\text{C}$\,/\,\si{\volt}} \\
+    \midrule
+    15 & 1.09 & 7.40 & 34 & 3.06 & 20.8\\
+    20 & 1.29 & 8.80 & 35 & 2.91 & 19.8\\
+    25 & 1.71 & 11.6 & 36 & 2.68 & 18.2\\
+    30 & 2.56 & 17.4 & 37 & 2.38 & 16.2\\
+    31 & 2.79 & 19.0 & 38 & 2.12 & 14.4\\
+    32 & 3.00 & 20.4 & 39 & 1.88 & 12.8\\
+    33 & 3.09 & 21.0 & 40 & 1.68 & 11.4\\
+    \bottomrule
+    \label{tab:Reso}
+  \end{tabular}
+\end{table}
+Abbildung \ref{fig:Reso} zeigt die Daten in einem halblogarithmischen Plot.
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{PlotUcUv.pdf}
+  \caption{Verhältnis von Kondensator- und Generatorspannung gegen die Frequenz.}
+  \label{fig:Reso}
+\end{figure}
+
+Zur Besimmung der Güte $q$ wird der Maximalwert aus Abbildung \ref{fig:Reso} abgelesen:
+\begin{equation*}
+  q_\text{ex} = 3.09
+\end{equation*}
+Der theoretische Wert errechnet sich mit $q_\text{th} =\frac{\omega_\text{res}}{\omega_\text{2}-\omega{1}}$ zu:
+\begin{equation*}
+  q_\text{th} = 4.25,
+\end{equation*}
+mit einer relativen Abweichung von
+\begin{equation*}
+\quad\frac{q_\text{ex}-q_\text{th}}{q_\text{th}} = 27.3\,\si{\percent}
+\end{equation*}
+
+Zur Bestimmung der Breite der Resonanzkurve wird das Maximum des Frequenzbereiches linear dargestellt.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{PlotRes.pdf}
+  \caption{Kondensatorspannung in Abhängigkeit der Frequenz, lineare Darstellung.}
+  \label{fig:lin}
+\end{figure}
+
+Nach Formel \eqref{eqn:omega} berechnet sich die Breite zu
+\begin{equation}
+  \omega_+ - \omega_- = (4.8\pm0.02)\cdot 10^3\,\si{\hertz}
+\end{equation}
+
+\subsection{Frequenzabhängigkeit der Phase}
+Zur Auswertung der Frequenzabhängigkeit der Phase wird die Phase $\varphi$ gegen die Frequenz $\nu$ halblogarithmisch abgebildet.
+Alle zur Messung verwendeten Werte sind in Tabelle \ref{tab:phinu} zu finden. Zur besseren Darstellung wird der Bereich um die Resonanzfrequenz in
+Abbildung \ref{fig:phinulin} linear dargestellt.
+\begin{table}
+  \centering
+  \begin{tabular}{ccc||ccc}
+    \toprule
+    {$\nu\,/\,\si{\kilo\hertz}$} & {$\Delta t\,/\,\si{\micro\second}$} & {$\varphi\,/\,\text{rad}$} &
+    {$\nu\,/\,\si{\kilo\hertz}$} & {$\Delta t\,/\,\si{\micro\second}$} & {$\varphi\,/\,\text{rad}$} \\
+    \midrule
+    15 & 1.2  & 0.11 & 38 & 9.8  & 2.34 \\
+    20 & 2.4  & 0.30 & 39 & 10.0 & 2.45 \\
+    25 & 2.8  & 0.44 & 40 & 10.4 & 2.61 \\
+    30 & 4.8  & 0.90 & 41 & 10.2 & 2.63 \\
+    31 & 5.6  & 1.09 & 42 & 10.2 & 2.69 \\
+    32 & 6.2  & 1.25 & 43 & 10.0 & 2.70 \\
+    33 & 6.8  & 1.41 & 44 & 9.8  & 2.71 \\
+    34 & 7.6  & 1.62 & 45 & 9.6  & 2.71 \\
+    35 & 8.4  & 1.85 & 50 & 9.2  & 2.89 \\
+    36 & 9.2  & 2.08 & 55 & 8.8  & 3.04 \\
+    37 & 9.6  & 2.23 &    &      &       \\
+    \bottomrule
+  \caption{Messwerte zur Bestimmung der Frequenzabhängigkeit der Phase.}
+  \label{tab:phinu}
+\end{tabular}
+\end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.65\textwidth]{PlotPhiNu.pdf}
+  \caption{Halblogarithmische Darstellung der Phase und der Frequenz.}
+  \label{fig:phinu}
+\end{figure}
+
+Die Resonanzfrequenz sowie die obere und untere Grenzfrequenz werden mit Gleichung \eqref{eqn:omegares} und \eqref{eqn:omega12} berechnet
+
+\begin{align*}
+  \text{Resonanzfrequenz}&:\quad \omega_\text{res} = 34.088\, \si{\kilo\hertz} \\
+  \text{untere Grenzfrequenz}&:\quad \omega_\text{1} = 30.779\, \si{\kilo\hertz} \\
+  \text{obere Grenzfrequenz}&:\quad \omega_\text{2} = 38.799\, \si{\kilo\hertz}. \\
+\end{align*}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.65\textwidth]{PlotPhiNuLin.pdf}
+  \caption{Lineare Darstellung um die Resonanzfrequenz.}
+  \label{fig:phinulin}
+\end{figure}
